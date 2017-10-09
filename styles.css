@@ -1,0 +1,22 @@
+#page-container {
+  border: solid;
+  min-height: 600px;
+  height: 70vh;
+  width: 100vw;
+}
+
+.squares {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  border: solid;
+  height: 60vh;
+  width: 80vw;
+}
+
+.box {
+  border: solid;
+  height: 40vh;
+  width: 18vw;
+}
