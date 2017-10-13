@@ -17,7 +17,7 @@ body {
   display: grid;
   grid-row: 1/2;
   grid-column: 2/3;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   color: gray;
 }
@@ -25,8 +25,8 @@ body {
 #squares {
   display: flex;
   border: solid;
-  height: 60vh;
-  width: 80vw;
+  width: 1036px;
+  height: 370px;
   align-items: center;
   align-content: center;
   justify-content: space-around;
@@ -35,9 +35,42 @@ body {
 
 }
 
+#picture {
+  border: solid;
+  display: flex;
+  grid-template-rows: 1fr 1fr;
+  min-height: 600px;
+  width: 1036px;
+  height: 698px;
+}
+
+.left {
+  display: grid;
+  grid-row: 1;
+  grid-column: 1;
+}
+
 .box {
   border: solid;
-  height: 40vh;
-  width: 18vw;
+  height: 350px;
+  width: 259px;
   border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  border-color: black;
+}
+
+.orange {
+  margin: 10px;
+  color: orange;
+}
+
+.green {
+  margin: 10px;
+  color: #3AC95C;
+}
+
+.turquoise {
+  margin: 10px;
+  color: turquoise;
 }
