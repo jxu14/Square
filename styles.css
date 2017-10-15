@@ -1,15 +1,14 @@
-body {
-  margin: 0;
-}
+* { margin: 0; padding: 0; }
 
-#page-container {
+#top {
   display: grid;
-  border: solid;
   min-height: 600px;
   height: 70vh;
   width: 100vw;
-  grid-template-rows: 1fr 6fr;
-  grid-template-columns: 1fr 1fr 1fr;
+/*  grid-template-rows: 1fr 6fr;
+  grid-template-columns: 1fr 1fr 1fr;*/
+  background-color: #FAFAFA;
+  margin-bottom: 0;
 
 }
 
@@ -24,7 +23,6 @@ body {
 
 #squares {
   display: flex;
-  border: solid;
   width: 1036px;
   height: 370px;
   align-items: center;
@@ -35,20 +33,61 @@ body {
 
 }
 
-#picture {
-  border: solid;
-  display: flex;
-  grid-template-rows: 1fr 1fr;
-  min-height: 600px;
-  width: 1036px;
-  height: 698px;
+#pictures {
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  margin-left: 100px;
+  margin-right: 100px;
+  background: white;
+  padding: 50px;
 }
 
-.left {
+#left {
   display: grid;
-  grid-row: 1;
-  grid-column: 1;
+  background-color: gray;
 }
+
+#left img {
+  max-width: 100%;
+  height: 100%;
+}
+
+#right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+#topright {
+  display: grid;
+  
+}
+
+#topright img {
+  width: 100%;
+  height: 100%;
+}
+
+#bottomright {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+#blsquare img {
+  width: 100%;
+  height: 100%;
+}
+
+#brsquare img {
+  width: 100%;
+  height: 100%;
+}
+
+
 
 .box {
   border: solid;
@@ -57,20 +96,93 @@ body {
   border-radius: 10px;
   text-align: center;
   margin: 10px;
-  border-color: black;
+  border-color: lightgray;
+  border-width: 1px;
+  padding: 20px;
+  background: white;
 }
 
 .orange {
   margin: 10px;
-  color: orange;
+  color: #EDC294;
 }
 
 .green {
   margin: 10px;
-  color: #3AC95C;
+  color: #A3BF15;
 }
 
 .turquoise {
   margin: 10px;
-  color: turquoise;
+  color: #1CBDA2;
 }
+
+#see {
+  color: #2996CC;
+  font-weight: bold;
+  background-color: #FAFAFA;
+
+}
+
+#learn {
+  font-weight: bold;
+}
+
+#quote {
+
+  text-align: center;
+  margin-right: 170px;
+  margin-left: 170px;
+  color: #2E3B4E;
+}
+
+#quote1 {
+    font-size: 1.9em;
+}
+
+#author {
+  font-size: .9em;
+  font-weight: bold;
+}
+
+#selling {
+  background-color: #FAFAFA;
+  text-align: center;
+}
+
+#selling1 {
+  font-size: 2em;
+  color: #2E3B53;
+}
+
+#selling2 {
+  color: #949BA8;
+  font-size: 1.2em;
+}
+
+#signup {
+  background: #2996CC;
+  color: white;
+  border-color: #2996CC;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#footercontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #1B2126;
+  color: white;
+  padding: 50px;
+  font-size: .9em;
+  font-weight: bold;
+  align-self: center;
+  padding-left: 300px;
+}
+
+.footertitle {
+  color: #6C7980;
+  font-size: 1.5em;
+}
+
