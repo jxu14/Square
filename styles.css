@@ -148,6 +148,7 @@
 #selling {
   background-color: #FAFAFA;
   text-align: center;
+  padding-top: 50px;
 }
 
 #selling1 {
@@ -167,6 +168,7 @@
   border-radius: 5px;
   padding: 10px;
   font-weight: bold;
+
 }
 
 #footercontainer {
@@ -186,3 +188,8 @@
   font-size: 1.5em;
 }
 
+@media only screen and (max-width: 1000px) {
+    .squares {
+        
+    }
+}
