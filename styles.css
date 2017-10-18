@@ -15,13 +15,15 @@
 }
 
 #squares {
-  display: grid;
+  display: flex;
   width: 1036px;
-  height: 410px;
+  height: 370px;
   grid-template-columns: repeat(4, 1fr);
-  border: solid;
+  align-items: center;
+
+
   width: 100%;
-/*  margin-left: 100px;*/
+  margin-left: 100px;
   margin-right: 100px;
 }
 
@@ -35,7 +37,6 @@
   margin-right: 100px;
   background: white;
   padding: 50px;
-  min-width: 400px;
 }
 
 #left {
@@ -88,7 +89,7 @@
   width: 259px;
   border-radius: 10px;
   text-align: center;
-  margin: 0;
+  margin: 10px;
   border-color: lightgray;
   border-width: 1px;
   padding: 20px;
@@ -96,20 +97,17 @@
 }
 
 .orange {
-
-  /*margin: 10px;*/
+  margin: 10px;
   color: #EDC294;
 }
 
 .orange:hover {
-
   border-width: 3px;
   border-color: #EDC294;
 }
 
 .green {
-
-  /*margin: 10px;*/
+  margin: 10px;
   color: #A3BF15;
 }
 
@@ -119,8 +117,7 @@
 }
 
 .turquoise {
-
-  /*margin: 10px;*/
+  margin: 10px;
   color: #1CBDA2;
 }
 .turquoise:hover {
@@ -200,32 +197,53 @@
 }
 
 
-@media only screen and (max-width: 750px) {
-  #squares {
-   margin: 0 auto;
-/*      width: 700px;
-*/      height: 800px;
+@media only screen and (max-width: 1300px) {
+    #squares {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       flex-wrap: wrap;
-  }
-  #quote1 {
-    font-size: 1.5em;
-  }
-  #pictures {
-    margin: 10px;
+      height: 1000px;
+      grid-gap: 1px;
+    }
+    #quote1 {
+      font-size: 1.5em;
+    }
+    #pictures {
+      margin: 10px;
 
 
-  }
+    }
 
-  #quote {
-    margin: 10px;
-  }
-  #footercontainer {
-    grid-template-columns: 1fr 1fr;
-    padding-left: 40px;
-  }
-
+    #quote {
+      margin: 10px;
+    }
+    #footercontainer {
+      grid-template-columns: 1fr 1fr;
+      padding-left: 40px;
+    }
 }
+@media only screen and (max-width: 500px) {
+    #squares {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      flex-wrap: wrap;
+      height: 800px;
+      grid-gap: 1px;
+    }
+    #quote1 {
+      font-size: 1.5em;
+    }
+    #pictures {
+      margin: 10px;
+    }
 
+    #quote {
+      margin: 10px;
+    }
+    #footercontainer {
+      grid-template-columns: 1fr 1fr;
+      padding-left: 10px;
+    }
+}
